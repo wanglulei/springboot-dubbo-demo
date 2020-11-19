@@ -10,7 +10,6 @@ import com.example.dubbo.dubboapi.service.ITestService;
  * @Author wanglulei
  * @Date 2020/11/19  15:04
  **/
-@Service
 public class TestServiceImpl implements ITestService {
     @Override
     public String sayHello(String name) {

@@ -19,7 +19,7 @@ import javax.annotation.Resource;
 @RestController
 @RequestMapping("/test")
 public class TestController {
-    @Reference
+    @Resource
     private ITestService testService;
 
     @GetMapping("/sayHello")
