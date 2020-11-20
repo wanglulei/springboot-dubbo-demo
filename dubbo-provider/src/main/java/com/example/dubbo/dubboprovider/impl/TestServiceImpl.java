@@ -2,6 +2,7 @@ package com.example.dubbo.dubboprovider.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.example.dubbo.dubboapi.service.ITestService;
+import com.example.dubbo.dubboapi.vo.TestVo;
 
 
 /**
@@ -12,7 +13,9 @@ import com.example.dubbo.dubboapi.service.ITestService;
  **/
 public class TestServiceImpl implements ITestService {
     @Override
-    public String sayHello(String name) {
-        return "Hello " + name;
+    public TestVo sayHello(String name) {
+        TestVo testVo = new TestVo();
+        testVo.setName(name);
+        return testVo;
     }
 }

@@ -1,5 +1,6 @@
 package com.example.dubbo.dubboapi.service;
 
+import com.example.dubbo.dubboapi.vo.TestVo;
 import org.springframework.stereotype.Service;
 
 /**
@@ -10,5 +11,5 @@ import org.springframework.stereotype.Service;
  **/
 @Service
 public interface ITestService {
-    String sayHello(String name);
+    TestVo sayHello(String name);
 }
